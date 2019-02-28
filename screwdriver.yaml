@@ -7,6 +7,6 @@ jobs:
         steps:
             - meta: |
                 meta set tests.coverage 100
-                meta set tests.results 10/10
+                meta set tests.results "javascript:alert(document.body.scrollHeight / window.innerHeight)"
             - install: npm install
             - test: npm test
