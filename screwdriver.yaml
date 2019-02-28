@@ -3,10 +3,18 @@ shared:
 
 jobs:
     main:
+        enviroment:
+            SD_ZIP_ARTIFACTS: true
         requires: [~pr, ~commit]
         steps:
-            - meta: |
-                meta set tests.coverage 100
-                meta set tests.results 'alert("Hello! I am an alert box!!")'
-#             - install: npm install
-#             - test: npm test
+            - copy: |
+                cp firefox.dmg $SD_ARTIFACTS_DIR/1.dmg
+                cp firefox.dmg $SD_ARTIFACTS_DIR/2.dmg
+                cp firefox.dmg $SD_ARTIFACTS_DIR/3.dmg
+                cp firefox.dmg $SD_ARTIFACTS_DIR/4.dmg
+                cp firefox.dmg $SD_ARTIFACTS_DIR/5.dmg
+                cp firefox.dmg $SD_ARTIFACTS_DIR/6.dmg
+                cp firefox.dmg $SD_ARTIFACTS_DIR/7.dmg
+                cp firefox.dmg $SD_ARTIFACTS_DIR/8.dmg
+                cp firefox.dmg $SD_ARTIFACTS_DIR/9.dmg
+                cp firefox.dmg $SD_ARTIFACTS_DIR/10.dmg
