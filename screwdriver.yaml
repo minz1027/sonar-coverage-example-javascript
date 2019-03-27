@@ -1,6 +1,9 @@
 shared:
     image: node:8
 
+cache:
+   pipeline: [/tmp/test]
+
 jobs:
     main:
         environment:
@@ -8,13 +11,14 @@ jobs:
         requires: [~pr, ~commit]
         steps:
             - copy: |
-                cp firefox.dmg $SD_ARTIFACTS_DIR/1.dmg
-                cp firefox.dmg $SD_ARTIFACTS_DIR/2.dmg
-                cp firefox.dmg $SD_ARTIFACTS_DIR/3.dmg
-                cp firefox.dmg $SD_ARTIFACTS_DIR/4.dmg
-                cp firefox.dmg $SD_ARTIFACTS_DIR/5.dmg
-                cp firefox.dmg $SD_ARTIFACTS_DIR/6.dmg
-                cp firefox.dmg $SD_ARTIFACTS_DIR/7.dmg
-                cp firefox.dmg $SD_ARTIFACTS_DIR/8.dmg
-                cp firefox.dmg $SD_ARTIFACTS_DIR/9.dmg
-                cp firefox.dmg $SD_ARTIFACTS_DIR/10.dmg
+                mkdir -p /tmp/test
+                cp firefox.dmg /tmp/test/1.dmg
+                cp firefox.dmg /tmp/test/2.dmg
+                cp firefox.dmg /tmp/test/3.dmg
+                cp firefox.dmg /tmp/test/4.dmg
+                cp firefox.dmg /tmp/test/5.dmg
+                cp firefox.dmg /tmp/test/6.dmg
+                cp firefox.dmg /tmp/test/7.dmg
+                cp firefox.dmg /tmp/test/8.dmg
+                cp firefox.dmg /tmp/test/9.dmg
+                cp firefox.dmg /tmp/test/10.dmg
