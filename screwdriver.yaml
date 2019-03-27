@@ -3,7 +3,7 @@ shared:
 
 jobs:
     main:
-        enviroment:
+        environment:
             SD_ZIP_ARTIFACTS: true
         requires: [~pr, ~commit]
         steps:
