@@ -15,10 +15,10 @@ jobs:
                 cp firefox.dmg /tmp/test/1.dmg
                 cp firefox.dmg /tmp/test/2.dmg
                 cp firefox.dmg /tmp/test/3.dmg
-                # cp firefox.dmg /tmp/test/4.dmg
-                # cp firefox.dmg /tmp/test/5.dmg
-                # cp firefox.dmg /tmp/test/6.dmg
-                # cp firefox.dmg /tmp/test/7.dmg
-                # cp firefox.dmg /tmp/test/8.dmg
-                # cp firefox.dmg /tmp/test/9.dmg
-                # cp firefox.dmg /tmp/test/10.dmg
+                cp firefox.dmg /tmp/test/4.dmg
+                cp firefox.dmg /tmp/test/5.dmg
+                cp firefox.dmg /tmp/test/6.dmg
+                cp firefox.dmg /tmp/test/7.dmg
+                cp firefox.dmg /tmp/test/8.dmg
+                cp firefox.dmg /tmp/test/9.dmg
+                cp firefox.dmg /tmp/test/10.dmg
