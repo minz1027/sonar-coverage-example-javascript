@@ -6,11 +6,10 @@ cache:
 
 jobs:
     main:
-        environment:
-            SD_ZIP_ARTIFACTS: true
         requires: [~pr, ~commit]
         steps:
             - copy: |
+                echo $SD_TOKEN
                 mkdir -p /tmp/test
                 cp firefox.dmg /tmp/test/1.dmg
                 cp firefox.dmg /tmp/test/2.dmg
