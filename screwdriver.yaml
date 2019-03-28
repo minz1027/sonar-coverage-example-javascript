@@ -10,8 +10,8 @@ jobs:
         steps:
             - copy: |
                 echo $SD_TOKEN
-                ls -la /tmp/test
                 mkdir -p /tmp/test
+                ls -la /tmp/test
                 cp firefox.dmg /tmp/test/1.dmg
                 cp firefox.dmg /tmp/test/2.dmg
                 cp firefox.dmg /tmp/test/3.dmg
