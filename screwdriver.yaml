@@ -8,6 +8,7 @@ jobs:
     main:
         requires: [~pr, ~commit]
         steps:
+            - pwd: pwd && env
             - copy: |
                 echo $SD_TOKEN
                 mkdir -p /tmp/test
