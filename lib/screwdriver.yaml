@@ -6,3 +6,4 @@ jobs:
         requires: [~pr, ~commit]
         steps:
             - pwd: pwd && env
+            - echo: echo hi
