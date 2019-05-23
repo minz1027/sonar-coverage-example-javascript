@@ -4,7 +4,7 @@
 > Screwdriver models
 
 ## Usage
-Asynchronous methods return promises.
+Asynchronous methods return promises..
 
 ```bash
 npm install screwdriver-models
